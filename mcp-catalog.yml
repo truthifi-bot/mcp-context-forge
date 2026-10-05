@@ -890,6 +890,26 @@ catalog_servers:
       supports_dcr: true
       resource: "https://mcp.morningstar.com/mcp"
 
+  - id: truthifi
+    name: "Truthifi"
+    category: "Data Analytics"
+    url: "https://api.truthifi.com/mcp"
+    logo_url: "/static/catalog-icons/truthifi.png"
+    auth_type: "OAuth"
+    provider: "Truthifi"
+    transport: "STREAMABLEHTTP"
+    description: "One verified household record for your AI: accounts, holdings, fees and Score. Can't move money."
+    requires_api_key: false
+    tags: ["finance", "investment", "portfolio", "wealth"]
+    documentation_url: "https://truthifi.com/mcp-tools"
+    oauth:
+      issuer: "https://api.truthifi.com"
+      authorization_url: "https://api.truthifi.com/oauth/authorize"
+      token_url: "https://api.truthifi.com/oauth/token"
+      scopes: ["offline_access"]
+      supports_dcr: true
+      resource: "https://api.truthifi.com/mcp"
+
   # RAG & AI Services
   - id: onecontext
     name: "OneContext"
